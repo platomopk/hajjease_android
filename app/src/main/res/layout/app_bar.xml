@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/new_toolbar"
+    android:background="@color/colorPrimaryDark">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/toolbar_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITLE"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"
+            android:layout_gravity="start|center_vertical"
+            android:textColor="#fff"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/toolbar_signout"
+            android:layout_marginRight="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/signoff"
+            android:layout_gravity="end|center_vertical"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/toolbar_profile"
+            android:layout_marginRight="55dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/profile_toolbar"
+            android:layout_gravity="end|center_vertical"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/toolbar_add"
+            android:layout_marginRight="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/plus"
+            android:layout_gravity="end|center_vertical"
+            android:visibility="gone"
+            />
+
+
+        <ImageView
+            android:id="@+id/toolbar_remove"
+            android:layout_marginRight="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/delete"
+            android:layout_gravity="end|center_vertical"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/toolbar_ok"
+            android:layout_marginRight="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/whitecheck"
+            android:layout_gravity="end|center_vertical"
+            android:visibility="gone"
+            />
+
+
+    </FrameLayout>
+
+</android.support.v7.widget.Toolbar>

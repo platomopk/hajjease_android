@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/lightborder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="65dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/scheduleImg"
+                android:layout_gravity="left"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pending"
+                ></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/scheduleDate"
+                android:textColor="#333"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="DATE"
+                />
+
+            <TextView
+                android:id="@+id/scheduleDesc"
+                android:textColor="#000"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Itenerary Description"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

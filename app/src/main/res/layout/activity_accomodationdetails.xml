@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".trackingdetails">
+
+    <include layout="@layout/app_bar"/>
+
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/makkahbtn"
+            android:text="Makkah"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </Button>
+
+
+        <Button
+            android:id="@+id/madinabtn"
+            android:text="Madina"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </Button>
+
+
+        <Button
+            android:id="@+id/minabtn"
+            android:text="Mina"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </Button>
+
+    </LinearLayout>
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:background="#e6e6e6"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="21.422510"
+        mapbox:mapbox_cameraTargetLng="39.826168"
+        mapbox:mapbox_cameraZoom="13"
+        />
+
+
+
+
+</LinearLayout>

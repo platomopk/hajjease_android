@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">BCP</string>
+
+    <string name="mapbox_access_token">pk.eyJ1IjoiaGFqamVhc2UiLCJhIjoiY2p5ZnU0b3Z5MDB1dDNqcnd3cWhuejN3NCJ9.7aKSqqkjFebDrD0lBepsfA</string>
+
+    <string-array name="genderArray">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="cityArray">
+        <item>Islamabad</item>
+        <item>Rawalpindi</item>
+        <item>Lahore</item>
+    </string-array>
+
+    <string-array name="serviceArray">
+        <item>Electrician</item>
+        <item>Plumber</item>
+        <item>Gardener</item>
+        <item>Driver</item>
+        <item>Handyman</item>
+    </string-array>
+
+    <string-array name="complaintArray">
+        <item>Food</item>
+        <item>Power</item>
+        <item>Cleanliness</item>
+        <item>Water</item>
+        <item>Gas</item>
+        <item>Security</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="commercialArray">
+        <item>Rude Behavior</item>
+        <item>Expired Products</item>
+        <item>Substandard Quality</item>
+        <item>Over Priced</item>
+        <item>Miscommitment for Delivery</item>
+        <item>Lack of Cleanliness</item>
+        <item>Inappropriate Ambience</item>
+    </string-array>
+
+    <string-array name="generalArray">
+        <item>Pavement Broken</item>
+        <item>Street Light Issue</item>
+        <item>Cracked/Bumpy Road</item>
+        <item>Sand/Cement/Bricks on Road</item>
+    </string-array>
+
+    <string-array name="servantTypeArr">
+        <item>Domestic Helper</item>
+        <item>Sweeper</item>
+        <item>Cleaner</item>
+        <item>Ayyah</item>
+        <item>Nanny</item>
+    </string-array>
+
+    <string-array name="phaseArray">
+        <item>Phase 1</item>
+        <item>Phase 2</item>
+        <item>Phase 3</item>
+        <item>Phase 4</item>
+        <item>Phase 5</item>
+        <item>Phase 6</item>
+        <item>Phase 7</item>
+        <item>Phase 8</item>
+        <item>Bahria Enclave</item>
+    </string-array>
+
+    <string-array name="boolArr">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <string-array name="sectorArray">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+
+</resources>

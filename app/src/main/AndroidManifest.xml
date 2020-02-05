@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ttb.bcp">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/mecca"
+        android:label="HajjEase Official"
+        android:largeHeap="false"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".scheduledetails"></activity>
+        <activity android:name=".accomodationdetails" />
+        <activity android:name=".trackingdetails" />
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notifications"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".description"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".createservant"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".updateservant"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".servants"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".createcar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".updatecar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cars"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".createcomplaint"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".complaints"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".complaintdesc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".services"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".servicesdesc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".feedbackservice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".createservice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".carpool"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".security"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".genericcomplaints"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".complaintdescgeneric"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".creategeneralobs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".createcommercialobs"
+            android:screenOrientation="portrait" />
+        <activity android:name=".paybills" />
+        <activity android:name=".paymentmodule" />
+        <activity android:name=".easypaisa" />
+        <activity android:name=".jazzcash" />
+        <activity android:name=".card" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver android:name=".NotificationReciever">
+            <intent-filter>
+                <action android:name="com.ttb.bcp.YES" />
+                <action android:name="com.ttb.bcp.NO" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".locationservice"
+            android:enabled="true" />
+    </application>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+</manifest>

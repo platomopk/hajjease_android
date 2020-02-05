@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginBottom="10dp"
+        android:background="#fff"
+        android:id="@+id/complaintRLinear"
+        >
+
+        <!--image-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/complaintRImage"
+                />
+        </LinearLayout>
+
+        <!--content-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:orientation="vertical"
+            android:weightSum="100"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="100"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/complaintRID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="ID"
+                    android:textAllCaps="true"
+                    android:paddingLeft="5dp"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/complaintRTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="Title"
+                    android:textAllCaps="true"
+                    android:paddingLeft="5dp"
+                    />
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/complaintRCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Category"
+                    android:textAllCaps="true"
+                    android:paddingLeft="5dp"
+                    />
+                <TextView
+                    android:id="@+id/complaintRTicket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Ticket #"
+                    android:textAllCaps="true"
+                    android:paddingLeft="5dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--activated-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:background="#ffffff"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text="Closed"
+                android:textAllCaps="true"
+                android:id="@+id/complaintRStatus"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

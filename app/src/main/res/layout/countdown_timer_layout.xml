@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/seconds"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textAllCaps="true"
+        android:text="SECONDS"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#333"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/mesg"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="20dp"
+        android:textAllCaps="true"
+        android:text="Cancel this request if you have clicked it accidentaly"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#333"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

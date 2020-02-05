@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:background="#42a5f5"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingLeft="15dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="date"
+        android:id="@+id/custom_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+</LinearLayout>

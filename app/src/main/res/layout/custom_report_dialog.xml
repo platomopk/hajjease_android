@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:padding="15dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/generic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your feedback here in the textbox down below. We will record this and get back to you as soon as possible."
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorPrimary" />
+    <EditText
+        android:gravity="top|left"
+        android:id="@+id/reportMsg"
+        android:inputType="text"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Message"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        />
+    <Button
+        android:id="@+id/reportMsgBtn"
+        android:inputType="text"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Report"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        />
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:layout_marginBottom="10dp"
+    android:background="#fff"
+    android:id="@+id/notificationMainLayout"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="25"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/notificationImg"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="75"
+        android:orientation="vertical"
+        android:weightSum="100"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/notificationID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="ID"
+                android:textAllCaps="true"
+                android:paddingLeft="5dp"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/notificationSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="Subject"
+                android:textAllCaps="true"
+                android:paddingLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/notificationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:text="Feburary 15, 2017"
+                android:textAllCaps="true"
+                android:paddingLeft="5dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            >
+            <TextView
+                android:id="@+id/notificationContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:text="Lorem opsem thing here .."
+                android:paddingLeft="5dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

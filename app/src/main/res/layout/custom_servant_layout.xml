@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:layout_marginBottom="10dp"
+    android:background="#fff"
+    android:id="@+id/notificationMainLayout"
+    >
+
+    <!--image-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/servantImg"
+            android:scaleType="centerInside"
+            />
+    </LinearLayout>
+
+    <!--content-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="60"
+        android:orientation="vertical"
+        android:weightSum="100"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/servantID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="ID"
+                android:textAllCaps="true"
+                android:paddingLeft="5dp"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/servantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="Name"
+                android:textAllCaps="true"
+                android:paddingLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/servantCreated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:text="Feburary 15, 2017"
+                android:textAllCaps="true"
+                android:paddingLeft="5dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/servantCnic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:text="CNIC"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/servantAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:text="ADDRESS"
+                android:paddingLeft="5dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--activated-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:gravity="center_horizontal"
+        android:background="#ffffff"
+        >
+        <ImageView
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="bottom"
+            android:padding="3dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/servantActivated"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
